@@ -7,6 +7,36 @@
 	<packaging>war</packaging>
 	<name>abc</name>
 	<description>abcd</description>
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <distribution>repo</distribution>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
+        </license>
+    </licenses>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<!-- version dependencies -->
+		<version.websocket.api>1.1</version.websocket.api>
+		<version.jboss.logging>3.1.4.GA-redhat-2</version.jboss.logging>
+		<!-- maven-compiler-plugin -->
+		<maven.compiler.target>1.6</maven.compiler.target>
+		<maven.compiler.source>1.6</maven.compiler.source>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>javax.websocket</groupId>
+			<artifactId>javax.websocket-api</artifactId>
+			<version>${version.websocket.api}</version>
+			<scope>provided</scope>
+		</dependency>
+		<!-- dependency>
+			<groupId>org.jboss.logging</groupId>
+			<artifactId>jboss-logging</artifactId>
+			<version>${version.jboss.logging}</version>
+			<scope>provided</scope>
+		</dependency-->
+	</dependencies>
 	<build>
 		<sourceDirectory>src</sourceDirectory>
 		<plugins>
@@ -27,11 +57,6 @@
 					<source>1.7</source>
 					<target>1.7</target>
 				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>javax.servlet</groupId>
-				<artifactId>javax.servlet-api</artifactId>
-				<version>2.5</version>
 			</plugin>
 		</plugins>
 	</build>

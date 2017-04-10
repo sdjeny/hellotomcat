@@ -28,6 +28,11 @@
 					<target>1.7</target>
 				</configuration>
 			</plugin>
+			<plugin>
+				<groupId>javax.servlet</groupId>
+				<artifactId>javax.servlet-api</artifactId>
+				<version>2.5</version>
+			</plugin>
 		</plugins>
 	</build>
 </project>

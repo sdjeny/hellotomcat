@@ -7,18 +7,18 @@
 	<packaging>war</packaging>
 	<name>abc</name>
 	<description>abcd</description>
-	<licenses>
-		<license>
-			<name>Apache License, Version 2.0</name>
-			<distribution>repo</distribution>
-			<url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
-		</license>
-	</licenses>
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <distribution>repo</distribution>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
+        </license>
+    </licenses>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<!-- version dependencies -->
 		<version.websocket.api>1.1</version.websocket.api>
-		<version.jboss.logging>3.1.4.GA-redhat-2</version.jboss.logging>
+		<version.jboss.logging>3.3.1.Final</version.jboss.logging>
 		<!-- maven-compiler-plugin -->
 		<maven.compiler.target>1.6</maven.compiler.target>
 		<maven.compiler.source>1.6</maven.compiler.source>
@@ -33,7 +33,7 @@
 		<dependency>
 			<groupId>org.jboss.logging</groupId>
 			<artifactId>jboss-logging</artifactId>
-			<version>3.3.1.Final</version>
+			<version>${version.jboss.logging}</version>
 			<scope>provided</scope>
 		</dependency>
 	</dependencies>

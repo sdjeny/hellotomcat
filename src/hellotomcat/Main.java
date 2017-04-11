@@ -35,7 +35,7 @@ public class Main implements Filter {
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
 			throws IOException, ServletException {
 		try {
-			response.getWriter().append("Served at: ").append(request.getServletContext().getContextPath());
+			System.out.println(request.getServletContext().getContextPath());
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

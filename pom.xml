@@ -17,6 +17,7 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<!-- version dependencies -->
+		<version.servlet.api>3.1.0</version.servlet.api>
 		<version.websocket.api>1.1</version.websocket.api>
 		<version.jboss.logging>3.3.1.Final</version.jboss.logging>
 		<!-- maven-compiler-plugin -->
@@ -24,6 +25,12 @@
 		<maven.compiler.source>1.8</maven.compiler.source>
 	</properties>
 	<dependencies>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>${version.servlet.api}</version>
+			<scope>provided</scope>
+		</dependency>
 		<dependency>
 			<groupId>javax.websocket</groupId>
 			<artifactId>javax.websocket-api</artifactId>
